@@ -5,64 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="We will help you creating a perfect website that address your objectives ">
+
     <title>GoDaddy</title>
 
-    <link rel="stylesheet" href="reusable.css">
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap" rel="stylesheet">
+
 </head>
 <body>
     
-    <header class="navbar">
+    <header class="navbar flex flex-alignC justify-spaceBetwe">
 
-        <div class="navbar__box1">
-            <i class="fa-solid fa-bars"> </i>
-             <nav class="navbar__dropcontent">
-                <ul><a href="#"></a></ul>
-                <ul><a href="#"></a></ul>
+        <div class="navbar__box1 flex flex-alignC  ">
+            <div class="burguer"><i class="fa-solid fa-bars " id="burguer"> </i ></div>
+            
+             <nav class="navbar__dropcontent  hide" id="navbarDrop">
+                <button class=" close" id="closeNavBar">x</button>
+               <a href="#" class="links marginT2 marginB2">Nombres de dominios</a>
+               <a href="#" class="links  " >sitio web y hosting</a>
             </nav>
-            <div class="navbar__logo"> <img src="" alt=""> </div>
+
+            <div class="navbar__logo"> <img src="https://s3-eu-west-1.amazonaws.com/tpd/logos/483fd2b90000640005029919/0x0.png" alt=""> </div>
+            
+            <a href="#" class="links-navbar ">Nombres de dominios</a>
+            <a href="#" class="links-navbar  " >sitio web y hosting</a>
+        
         </div>
 
-        <nav class="navbar__btns">
-            <ul>
-                <li> <i class="fa-brands fa-rocketchat contact"></i> </li>
-
-                <div class="dropContact" id="dropContact">
-                    <button class="btn-light close"> x</button>
-                    <h2 class="subtitle"> Chatear ahora  </h2>
-                    <p class="text">Chatea con nuestro equipo de ventas y asistencia técnica para obtener respuestas rápidas sobre las características de los productos, los precios y más.</p>
-                   <div class="dropContact__btns">  
-                     <button class="btn-light text" > WhatsApp</button>
-                     <button class="btn-dark text"> Chatear ahora </button>  
-                    </div>
-                   
-                </div>
-
-                <li> <a href="#"> <i class="fa-solid fa-question"></i> </a></li>
-
-                <li> <i class="fa-solid fa-user"></i> </li>
-                <div class="dropUsers"> 
-
-                    <button class="btn-light close"> x</button>
-
-                    <div class="SignIn">
-                        <h2 class="subtitle">Usuarios registrados</h2>
-                        <p>Tienes una cuenta?</p>
-                        <a href="#">Inicia sesion</a>
-                    </div>
-
-                    <div class="logIn">
-                        <h2 class="subtitle"> Clientes nuevos </h2>
-                        <p class="text">¿Nuevo en GoDaddy? Crea una cuenta para comenzar hoy mismo.</p>
-                        <a href="#">Crear una cuenta</a>
-                    </div>
-
-                    <li> <a href=""><i class="fa-solid fa-cart-shopping"></i></a></i></li>
-                   
-                </div>
+            <ul class="flex navbar__buttons flex-all-center">
+                <li> <i class="fa-brands fa-rocketchat contact"  id="contactBtn"></i> </li>
+                <li> <a href="#"> <i class="fa-solid fa-question" ></i> </a></li>
+                <li> <a href="#"> <i class="fa-solid fa-user"></i> </a> </li>
+                <li> <a href="#"> <i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
-        </nav>
-       
+    
     </header>
+
+    <div class="dropContact flex flex-all-center flex-column hide  " id="dropContact">
+        <button class=" close" id="closeContact">x</button>
+        <h2 class="subtitle"> Chatear ahora  </h2>
+        <p class="Contact__text">Chatea con nuestro e quipo de ventas y asistencia técnica para obtener respuestas rápidas sobre las características de los productos, los precios y más.</p>
+       <div class="dropContact__btns">  
+         <a href="#" class="btn-light btn-contact ">WhatsApp</a> 
+        <a href="#" class="btn-dark btn-contact"> Chatear ahora</a>  
+        </div>
+
+    </div>
 
     <main>
         <section class="searchBar">
@@ -93,7 +84,7 @@
   
 
 
-  
+   <script src="app.js"></script>
     <script src="https://kit.fontawesome.com/cf733db6d2.js" crossorigin="anonymous"></script>
 
 </body>
