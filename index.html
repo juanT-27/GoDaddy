@@ -22,7 +22,7 @@
         <div class="navbar__box1 flex flex-alignC  ">
             <div class="burguer"><i class="fa-solid fa-bars " id="burguer"> </i ></div>
             
-             <nav class="navbar__dropcontent  hide" id="navbarDrop">
+             <nav class="navbar__dropcontent flex flex-all-center flex-column  hide" id="navbarDrop">
                 <button class=" close" id="closeNavBar">x</button>
                <a href="#" class="links marginT2 marginB2">Nombres de dominios</a>
                <a href="#" class="links  " >sitio web y hosting</a>
@@ -52,22 +52,20 @@
          <a href="#" class="btn-light btn-contact ">WhatsApp</a> 
         <a href="#" class="btn-dark btn-contact"> Chatear ahora</a>  
         </div>
-
     </div>
 
     <main>
-        <section class="searchBar">
-            <form action="search">
-                <input type="text" placeholder="Escribe el dominio que deseas"> <button><i class="fa-solid fa-magnifying-glass"></i></button> 
+        
+            <form action="search" class="flex flex-all-center">
+                <input type="search" placeholder="Escribe el dominio que deseas" class="searchBar"> <button class="searchBtn"><i class="fa-solid fa-magnifying-glass searchBtn"></i></button> 
             </form>
-        </section>
+       
 
-        <section class="banner">
-
-            <div class="banner__info">
-                <h2 class="subtitle"> Páginas web + Marketing </h3>
-                <p class="title">Construir tu página web es muy fácil </p>
-                <button class="btn-dark larger__btn">Comienza gratis</button>
+        <section class="banner flex  marginT1">
+            <div class="banner__info flex flex-alignC  flex-column marginT1">
+                <p class="textLight"> Páginas web + Marketing </p>
+                <h2 class="fontW3 txtCent">Construir tu página web es muy fácil </h2>
+                <button class="btn-dark larger__btn marginT1">Comienza gratis</button>
             </div>
 
         </section>
