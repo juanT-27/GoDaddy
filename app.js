@@ -12,4 +12,4 @@ function hide (obj){
 const burguer = document.getElementById("burguer").addEventListener("click", ()=>{ show (sideBar)})
 const contactBtn= document.getElementById("contactBtn").addEventListener("click", ()=>{ show (contactDrop)})
 const closeNav= document.getElementById("closeNavBar").addEventListener("click", ()=> {hide(sideBar)} )
-const closeContact =document.getElementById("closeContact").addEventListener("click", ()=> {hide (contactDrop)})
+const closeContact=document.getElementById("closeContact").addEventListener("click", ()=> {hide (contactDrop)})
